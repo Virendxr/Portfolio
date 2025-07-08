@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virendar - Portfolio</title>
+    <meta name="description" content="BCA Student at Amrita University, Mysore - Passionate about computer science, web development, and AI/ML technologies.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+</head>
+<body class="loading">
+    <!-- Modern Preloader -->
+    <div class="preloader" id="preloader">
+        <div class="particles" id="particles"></div>
+        <div class="wave-loader">
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+            <div class="wave-bar"></div>
+        </div>
+        <div class="loader-text">Loading Portfolio...</div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+            <div class="nav-container">
+                <a href="#home" class="logo">Virendar</a>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#activities" class="nav-link">Activities</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-controls">
+                    <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                        <span id="theme-icon">🌙</span>
+                    </button>
+                    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                        <span id="menu-icon" style="margin-left: 1px;">☰</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero snap-section">
+            <div class="hero-content">
+                <div class="greeting">
+                    <span>Hey there!</span>
+                    <span class="greeting-emoji">👋</span>
+                </div>
+                <div class="profile-img">
+                    <img src="assets/virendar.png">
+                </div>
+                <h1>Virendar</h1>
+                <p class="subtitle">BCA Student at Amrita University, Mysore</p>
+                <p class="description">
+                    Passionate about computer science with a strong grasp of fundamentals.
+                </p>
+                <div class="cta-buttons">
+                    <a href="#certifications" class="btn btn-primary">View Certifications</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="scroll-indicator" onclick="instantScrollTo('#about')">
+                <span style="font-size: 1.5rem;">↓</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about snap-section fade-in">
+            <div class="section-header">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hey there! I'm a 3<sup>rd</sup> year student pursuing <b style="color: var(--text-secondary);">Bachelor of Computer Applications (BCA)</b> at Amrita University, Mysore, with a solid CGPA of 9.41. I'm passionate about computer science and have a strong grasp of the fundamentals, including Operating Systems, Computer Architecture, C, Java, SQL, DBMS, Computer Networks, and web development.
+                    </p>
+                    <p>
+                        While my web development skills are currently at the foundational level, I am dedicated to continuously improving and expanding my expertise.
+                    </p>
+                    <p style="font-style: italic; color: var(--accent); font-weight: 600;">
+                        "Laying the groundwork now, sharpening expertise for what's next!"
+                    </p>
+                    <div class="social-links">
+                        <a href="https://github.com/Virendxr" class="social-link" aria-label="GitHub" target="_blank">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/virendar-seervi-005627288/" class="social-link" aria-label="LinkedIn" target="_blank">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:virendarvirendar242@gmail.com" class="social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909c.904 0 1.636.732 1.636 1.636z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div style="background: var(--bg-secondary); border-radius: 1rem; border: 1px solid var(--border); display: flex; align-items: center; justify-content: center; color: var(--text-secondary); margin-bottom: 80px; overflow: hidden; aspect-ratio: 16 / 9; max-width: 100%;">
+                    <img src="assets/amrita.png" style="width: 100%; height: 100%; object-fit: cover; border-radius: 1rem; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);">
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+    <section id="skills" class="skills snap-section fade-in">
+        <div class="section-header">
+            <h2>Skills & Technologies</h2>
+        </div>
+        <div class="skills-grid">
+            <div class="skill-item">C</div>
+            <div class="skill-item">Java</div>
+            <div class="skill-item">Python</div>
+            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">Node.js</div>
+            <div class="skill-item">SQL</div>
+            <div class="skill-item">Excel</div>
+            <div class="skill-item">OOP</div>
+            <div class="skill-item">DSA</div>
+            <div class="skill-item">Git/Github</div>
+            <div class="skill-item">Teamwork</div>
+            <div class="skill-item">Adaptability</div>
+            <div class="skill-item">Communication</div>
+            <div class="skill-item">Problem Solving</div>
+        </div>
+    </section>
+
+        <!-- Activities Section -->
+        <section id="activities" class="activities snap-section fade-in">
+            <div class="section-header">
+                <h2>Activities</h2>
+            </div>
+            <div class="activities-content">
+                <div class="activity-item">
+                    <h3>Smart India Hackathon (SIH) 2024</h3>
+                    <p><b>Problem Statement:</b> AI-Powered Student Assistance Chatbot for the Department of Technical Education, Government of Rajasthan.</p>
+                    <p><b>Key Takeaways:</b> Contributed to the ideation and development process of an AI-powered chatbot and mobile app. Gained hands-on experience in problem-solving, collaboration, and understanding real-world software development workflows.</p>
+                </div>
+                
+                <div class="activity-item">
+                    <h3>Workshops</h3>
+                    <p><b>Competitive Programming:</b> Learned techniques to optimize algorithms, used dynamic programming to solve challenging problems, and improved coding efficiency.</p>
+                    <p><b>Blockchain & Web3:</b> Gained insights into decentralized technologies and understood the basics of blockchain technology in the digital economy.</p>
+                </div>
+                
+                <div class="activity-item">
+                    <h3>Tech Talks</h3>
+                    <p><b>Neural Networks:</b> Attended a session on 'Overview of Neural Networks in Learning Paradigms' by Charles Jeyaseelan, learning about AI and deep learning models.</p>
+                </div>
+                
+                <div class="activity-item">
+                    <h3>Social Volunteering</h3>
+                    <p><b>Nele Ashrama Experience:</b> Conducted a session on 'Contentment for Joyful Life' at Nele Ashrama, emphasizing gratitude, well-being, and self-awareness.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects snap-section fade-in">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/stopwatch.png">
+                        <div class="project-overlay">
+                             <a href="https://github.com/Virendxr/PRODIGY_WD_02" target="_blank" style="text-decoration: none;">
+                                <div class="project-icon" title="View Code">
+                                        <svg viewBox="0 0 24 24" style="width: 1.2rem; height: 1.2rem; fill: currentColor;">
+                                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                        </svg>
+                                </div>
+                            </a>
+
+                            <a href="https://virendxr.github.io/PRODIGY_WD_02/" target="_blank" style="text-decoration: none;">
+                                <div class="project-icon" title="View Live">
+                                    🔗
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Digital Stopwatch</h3>
+                        <p class="project-description">
+                            A simple yet precise stopwatch with Start, Stop, Reset, and Lap functionality. Built using JavaScript for seamless time tracking.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/tictactoe.png">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Virendxr/PRODIGY_WD_03" target="_blank" style="text-decoration: none;">
+                                <div class="project-icon" title="View Code">
+                                    <svg viewBox="0 0 24 24" style="width: 1.2rem; height: 1.2rem; fill: currentColor;">
+                                        <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                    </svg>
+                                </div>
+                            </a>
+
+                            <a href="https://virendxr.github.io/PRODIGY_WD_03/" target="_blank" style="text-decoration: none;">
+                                <div class="project-icon" title="View Live">
+                                    🔗
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tic Tac Toe Game</h3>
+                        <p class="project-description">
+                            A classic 2-player Tic Tac Toe game with turn logic, win/draw detection, and sleek UI. Fully functional and built using web technologies.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="assets/weather.png">
+                        <div class="project-overlay">
+                            <div class="project-icon" title="View Code">
+                                <svg viewBox="0 0 24 24" style="width: 1.2rem; height: 1.2rem; fill: currentColor;">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </div>
+                            <div class="project-icon" title="View Live">
+                                🔗
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Weather App</h3>
+                        <p class="project-description">
+                            A responsive weather app that fetches real-time weather data using OpenWeatherMap API. Displays temperature, humidity, and conditions by city.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications snap-section fade-in">
+            <div class="section-header">
+                <h2>Certifications</h2>
+            </div>
+            <div class="cert-grid">
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/pmnMSL4QiQ9JCgE3W/kkE9HyeNcw6rwCRGw_pmnMSL4QiQ9JCgE3W_4YMzo8vmNs2RvHAeu_1751424908476_completion_certificate.pdf" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #FF9500, #FF6B00); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">☁️</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Solutions Architecture with AWS</div>
+                        <ul>
+                            <li>Elastic Beanstalk deployment</li>
+                            <li>Combined EC2, RDS, and Load Balancer for reliability</li>
+                            <li>Planned cost-efficient setup using AWS pricing</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 3.5rem;">
+                            <img src="assets/aws.png" alt="aws" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>Amazon Web Services</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/xhih9yFWsf6AYfngd/HNpZwZcuYwona2d8Y_xhih9yFWsf6AYfngd_4YMzo8vmNs2RvHAeu_1751097376107_completion_certificate.pdf" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #A100FF, #7B00D3); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">⚡</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Software Engineering with Accenture</div>
+                        <ul>
+                            <li>Worked with IaaS, PaaS, and cloud infrastructure basics</li>
+                            <li>Applied security practices</li>
+                            <li>Debugged code and ran unit & UAT tests</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 3.5rem;">
+                            <img src="assets/accenture.png" alt="accenture" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>Accenture</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://oneroadmap.io/skills/java/certificate/CERT-EF1BA8F1" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #ED8B00, #FF6B00); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">☕</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Java Certification Test</div>
+                        <ul>
+                            <li>Demonstrated knowledge of core Java syntax and logic</li>
+                            <li>Applied OOP concepts like classes and inheritance</li>
+                            <li>Solved coding problems using standard Java libraries</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 1rem;">
+                            <img src="assets/OneRoadmap.png" alt="OneRoadmap" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>OneRoadmap</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://oneroadmap.io/skills/css/certificate/CERT-7C524C1D" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #1572B6, #33A9DC); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">🎨</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">CSS Certification Test</div>
+                        <ul>
+                            <li>Styled web pages using modern CSS techniques</li>
+                            <li>Built layouts using Flexbox and Grid</li>
+                            <li>Applied responsive design for multiple screen sizes</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 2.5rem;">
+                            <img src="assets/OneRoadmap.png" alt="OneRoadmap" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>OneRoadmap</small>
+                        </div>
+                    </div>
+                </a>
+
+                
+                <a href="https://www.linkedin.com/posts/virendar-seervi-005627288_introduction-to-data-analysis-using-excel-activity-7343983477450579969-InB0?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXcGUUBl-8TfAbHjknq5KKJuqsoP5fJdwg" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #217346, #0F9D58); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">📊</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Data Analysis using Excel</div>
+                        <ul>
+                            <li>Cleaned and formatted data using Excel tools</li>
+                            <li>Used functions like VLOOKUP</li>
+                            <li>Created pivot tables and visualized data trends</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 2.5rem;">
+                            <img src="assets/upgrad.png" alt="upgrad" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>upGrad</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.hackerrank.com/certificates/iframe/50d4e7522c8c" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #00EA64, #00B84A); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">🗃️</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">SQL (Basic)</div>
+                        <ul>
+                            <li>Selected and filtered data with basic SQL queries</li>
+                            <li>Created and modified tables using DDL commands</li>
+                            <li>Applied aggregate functions and joins</li>
+                        </ul>
+                        <div class="cert-provider">
+                            <img src="assets/HackerRank.png" alt="HackerRank" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>HackerRank</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://certificates.mooc.fi/validate/ytd7m39iil" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #0066CC, #004499); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">🤖</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Elements of AI</div>
+                        <ul>
+                            <li>Learned core AI concepts and problem-solving</li>
+                            <li>Explored machine learning and neural networks basics</li>
+                            <li>Examined real-world AI applications</li>
+                        </ul>
+                        <div class="cert-provider">
+                            <img src="assets/Helsinki.png" alt="Helsinki" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>University of Helsinki</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/posts/virendar-seervi-005627288_fundamentals-of-machine-learning-and-ai-activity-7307754155719147520-FrBF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXcGUUBl-8TfAbHjknq5KKJuqsoP5fJdwg" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #FF9500, #FF6B00); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">🧠</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Fundamentals of ML & AI</div>
+                        <ul>
+                            <li>Understood ML/AI core concepts</li>
+                            <li>Explored supervised, unsupervised learning</li>
+                            <li>Identified AWS AI/ML services</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 2rem;">
+                            <img src="assets/aws.png" alt="aws" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>Amazon Web Services</small>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Infosys Springboard Certificates -->
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #F7D117, #FFE135); height: 100%; display: flex; align-items: center; justify-content: center; color: #333; font-size: 2rem;">💻</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">JavaScript</div>
+                        <ul>
+                            <li>Learned JavaScript data types and syntax</li>
+                            <li>Studied control flow and functions</li>
+                            <li>Reviewed browser DOM and event basics</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 2rem;">
+                            <img src="assets/infosys-springboard.png" alt="infosys-springboard" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>Springboard</small>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cert-card">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #4CAF50, #45A049); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">⚙️</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Software Engineering</div>
+                        <ul>
+                            <li>Learned Agile software development fundamentals</li>
+                            <li>Applied software engineering principles</li>
+                            <li>Explored DevOps and project workflows</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 2rem;">
+                            <img src="assets/infosys-springboard.png" alt="infosys-springboard" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>Springboard</small>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="https://www.linkedin.com/posts/virendar-seervi-005627288_design-thinking-activity-7256041748030730240-_ye_?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXcGUUBl-8TfAbHjknq5KKJuqsoP5fJdwg" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #E91E63, #C2185B); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">💡</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Design Thinking</div>
+                        <ul>
+                            <li>Empathized with users and defined problem statements</li>
+                            <li>Ideated and prototyped solution concepts</li>
+                            <li>Tested prototypes and incorporated user feedback</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: -0.2rem;">
+                            <img src="assets/infosys-springboard.png" alt="infosys-springboard" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>Springboard</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/posts/virendar-seervi-005627288_interactive-skills-activity-7255249683441201153-3DZn?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXcGUUBl-8TfAbHjknq5KKJuqsoP5fJdwg" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #9C27B0, #7B1FA2); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">🎯</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Interactive Skills</div>
+                        <ul>
+                            <li>Learned how to create interactive content</li>
+                            <li>Studied basic user engagement techniques</li>
+                            <li>Understood using feedback to improve learning</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 3rem;">
+                            <img src="assets/infosys-springboard.png" alt="infosys-springboard" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>Springboard</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/posts/virendar-seervi-005627288_presentation-skills-activity-7255937372880527360-WVSY?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXcGUUBl-8TfAbHjknq5KKJuqsoP5fJdwg" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #FF5722, #E64A19); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">🎤</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Presentation Skills</div>
+                        <ul>
+                            <li>Learned how to structure presentations clearly</li>
+                            <li>Practiced confident speaking and storytelling</li>
+                            <li>Used visuals to engage audiences</li>
+                        </ul>
+                        <div class="cert-provider" style="margin-top: 2rem;">
+                            <img src="assets/infosys-springboard.png" alt="infosys-springboard" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>Springboard</small>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/posts/virendar-seervi-005627288_time-management-activity-7255612989733535744--I32?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEXcGUUBl-8TfAbHjknq5KKJuqsoP5fJdwg" class="cert-card" target="_blank">
+                    <div class="cert-image">
+                        <div style="background: linear-gradient(135deg, #607D8B, #455A64); height: 100%; display: flex; align-items: center; justify-content: center; color: white; font-size: 2rem;">⏰</div>
+                    </div>
+                    <div class="cert-content">
+                        <div class="cert-title">Time Management</div>
+                        <ul>
+                            <li>Planned days using priority and time-block methods</li>
+                            <li>Organized tasks with calendars and to-do lists</li>
+                            <li>Improved focus through clear goal setting</li>
+                        </ul>
+                        <div class="cert-provider">
+                            <img src="assets/infosys-springboard.png" alt="infosys-springboard" style="width: 20px; height: 20px; object-fit: contain;">
+                            <small>Springboard</small>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Contact Section - Twitter Logo Removed -->
+        <section id="contact" class="contact snap-section fade-in">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Let's connect!</h3>
+                    <p>
+                        I'm always interested in new opportunities, collaborations, and learning experiences. Whether you have a question, want to discuss a project, or just want to say hi, feel free to reach out!
+                    </p>
+                    <div class="contact-social">
+                        <a href="https://github.com/Virendxr" class="contact-social-link" aria-label="GitHub" target="_blank">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/virendar-seervi-005627288/" class="contact-social-link" aria-label="LinkedIn" target="_blank">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                            </svg>
+                        </a>
+                        <a href="mailto:virendarvirendar242@gmail.com" class="contact-social-link" aria-label="Email">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-.904.732-1.636 1.636-1.636h.91L12 10.09l9.455-6.269h.909c.904 0 1.636.732 1.636 1.636z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;" id="submit-btn">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2025 Virendar. All rights reserved.</p>
+        </footer>
+
+        <!-- Scroll to Top Button -->
+        <button class="scroll-to-top" id="scroll-to-top" aria-label="Scroll to top" style="font-weight: bolder;">
+            ↑
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
