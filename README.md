@@ -30,6 +30,17 @@ The site also includes a resume-style About section, skill grid, certificates, a
 │   └── [icons/logos]       → Certification and social icons
 ├── README.md               → You’re here!
 
+📦 stopwatch-app/
+├── index.html → Main HTML file
+├── style.css → All styles and layout
+├── script.js → Stopwatch logic and interactions
+└── assets/ → Audio files + icon
+  ├── icon.png
+  ├── start.mp3
+  ├── stop.mp3
+  ├── reset.mp3
+  ├── lap.mp3
+  └── tick.mp3
 ---
 
 ## ⚙️ Projects Featured
