@@ -245,9 +245,9 @@
         }
 
         .theme-toggle:hover {
-            border-color: var(--border);
+            border-color: var(--bg-primary);
+            box-shadow: 0 4px 12px var(--text-primary);
             color: var(--accent);
-            transform: scale(1.05);
         }
         
         .mobile-menu-btn {
