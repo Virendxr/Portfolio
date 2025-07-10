@@ -23,11 +23,12 @@ The site also includes a resume-style About section, skill grid, certificates, a
 ├── style.css               → External stylesheet for global styles
 ├── script.js               → JavaScript for interactions and theme logic
 ├── assets/
-    ├── virendar.png
-    ├── stopwatch.png
-    ├── tictactoe.png
-    ├── weather.png  
-    └── [icons/logos]
+│   ├── virendar.png        → Profile image
+│   ├── stopwatch.png       → Stopwatch preview image
+│   ├── tictactoe.png       → Tic Tac Toe preview image
+│   ├── weather.png         → Weather App preview image
+│   └── [icons/logos]       → Certification and social icons
+├── README.md               → You’re here!
 
 ---
 
