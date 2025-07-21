@@ -81,8 +81,8 @@ A weather dashboard using the OpenWeatherMap API to fetch and display current we
 - Temperature, humidity, and real-time data
 - Responsive layout and error handling
 
-🔗 [Live Demo](https://github.com/Virendxr/PRODIGY_WD_05)
-💻 [Source Code](https://virendxr.github.io/PRODIGY_WD_05)
+🔗 [Live Demo](https://virendxr.github.io/PRODIGY_WD_05)
+💻 [Source Code](https://github.com/Virendxr/PRODIGY_WD_05)
 
 ---
 
