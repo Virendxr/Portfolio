@@ -82,7 +82,7 @@ A weather dashboard using the OpenWeatherMap API to fetch and display current we
 - Responsive layout and error handling
 
 🔗 [Live Demo](https://github.com/Virendxr/PRODIGY_WD_05)
-💻 [Source Code](https://virendxr.github.io/PRODIGY_WD_05/)
+💻 [Source Code](https://virendxr.github.io/PRODIGY_WD_05)
 
 ---
 
