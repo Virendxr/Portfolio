@@ -2,14 +2,25 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // 1. Theme Toggle Logic
     const themeToggle = document.getElementById('theme-toggle');
-    const themeIcon = document.getElementById('theme-icon');
+    const iconSun = document.getElementById('icon-sun');
+    const iconMoon = document.getElementById('icon-moon');
     const body = document.body;
 
     const currentTheme = localStorage.getItem('theme') || 'dark';
     body.setAttribute('data-theme', currentTheme);
     
-    if (themeIcon) {
-        themeIcon.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
+    function updateThemeIcon(theme) {
+        if (theme === 'dark') {
+            iconSun.style.display = 'block';
+            iconMoon.style.display = 'none';
+        } else {
+            iconSun.style.display = 'none';
+            iconMoon.style.display = 'block';
+        }
+    }
+
+    if(iconSun && iconMoon) {
+        updateThemeIcon(currentTheme);
     }
 
     themeToggle.addEventListener('click', () => {
@@ -18,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         body.setAttribute('data-theme', next);
         localStorage.setItem('theme', next);
-        themeIcon.textContent = next === 'dark' ? '☀️' : '🌙';
+        updateThemeIcon(next);
     });
 
     // 2. Scroll to Top Logic
@@ -82,7 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: true });
 
-    // MOBILE MENU TOGGLE FIX
     if(mobileBtn && navMenu) {
         mobileBtn.addEventListener('click', () => {
             navMenu.classList.toggle('active');
@@ -90,12 +100,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 6. Smooth Anchor Scrolling (Flawless Navbar Alignment)
+    // 6. Smooth Anchor Scrolling
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
             
-            // Close mobile menu if open when a link is clicked
             if(navMenu && navMenu.classList.contains('active')) {
                 navMenu.classList.remove('active');
                 if (menuIcon) menuIcon.textContent = '☰';
@@ -105,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
             const targetElement = document.querySelector(targetId);
             
             if (targetElement) {
-                // Calculates precise stopping point 90px above the element to clear the navbar
                 const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY - 90;
                 window.scrollTo({
                     top: targetPosition, 
@@ -126,28 +134,57 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 8. Contact Form Handling
+    // 8. Formspree Contact Form Architecture
     const contactForm = document.getElementById('contact-form');
+    
     if(contactForm) {
-        contactForm.addEventListener('submit', function(e) {
+        contactForm.addEventListener('submit', async function(e) {
             e.preventDefault();
             
             const submitBtn = document.getElementById('submit-btn');
             const originalText = submitBtn.textContent;
             
-            // Show loading state
             submitBtn.textContent = 'TRANSMITTING...';
             submitBtn.disabled = true;
             submitBtn.style.opacity = '0.7';
-            
-            // Simulate form submission process
-            setTimeout(() => {
-                alert('Transmission Received. Communication channel established.');
-                this.reset();
+
+            // Fixed Formspree Execution Logic
+            const FORMSPREE_URL = "https://formspree.io/f/xnjyldrk"; 
+
+            // If the URL is empty or the placeholder, run the simulation
+            if (FORMSPREE_URL === "" || FORMSPREE_URL.includes("xyzababc")) {
+                setTimeout(() => {
+                    alert('Simulation: Transmission Received. (Replace URL to activate)');
+                    this.reset();
+                    submitBtn.textContent = originalText;
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                }, 1000);
+                return; // Stop execution here for simulation
+            }
+
+            // If a real URL is present, execute the actual fetch request
+            try {
+                const formData = new FormData(this);
+                const response = await fetch(FORMSPREE_URL, {
+                    method: 'POST',
+                    body: formData,
+                    headers: { 'Accept': 'application/json' }
+                });
+
+                if (response.ok) {
+                    alert('Transmission Received. Communication channel established.');
+                    this.reset();
+                } else {
+                    alert('Transmission Failed. Please try again.');
+                }
+            } catch (error) {
+                alert('Network Error. Please try again.');
+            } finally {
                 submitBtn.textContent = originalText;
                 submitBtn.disabled = false;
                 submitBtn.style.opacity = '1';
-            }, 1000);
+            }
         });
     }
 });
