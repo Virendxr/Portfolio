@@ -455,16 +455,19 @@ h4 {
 }
 
 /* Exact Coordinate Geometry */
-.label-1 { top: 44px; left: 290px; }
-.label-1 .node-dot { left: -3px; top: calc(50% - 3px); animation-delay: 0s; }
-.label-1 .node-line { width: 40px; margin-left: 6px; }
 
-.label-2 { top: 260px; right: 304px; flex-direction: row-reverse; }
+.label-1 { top: 298px; right: 327px; flex-direction: row-reverse; }
+.label-1 .node-dot { right: -3px; top: calc(50% - 3px); animation-delay: 1s; }
+.label-1 .node-line { width: 60px; margin-right: 6px; }
+.label-1 .node-text { margin-left: 0; margin-right: 12px; text-align: right; }
+
+.label-2 { top: 103px; right: 298px; flex-direction: row-reverse; }
 .label-2 .node-dot { right: -3px; top: calc(50% - 3px); animation-delay: 1s; }
 .label-2 .node-line { width: 60px; margin-right: 6px; }
 .label-2 .node-text { margin-left: 0; margin-right: 12px; text-align: right; }
 
-.label-3 { top: 230px; left: 252px; }
+/* label-3 (AI/ML SYSTEMS): Bottom-right, Middle Orbit */
+.label-3 { top: 215px; left: 240px; }
 .label-3 .node-dot { left: -3px; top: calc(50% - 3px); animation-delay: 2s; }
 .label-3 .node-line { width: 80px; margin-left: 6px; }
 
