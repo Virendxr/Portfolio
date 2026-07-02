@@ -7,11 +7,11 @@
     --text-muted: #8a8a93;
     --accent: #ffffff;
     --border: #27272a;
-    --dot-color: rgba(255, 255, 255, 0.3); 
+    --dot-color: rgba(255, 255, 255, 0.15); 
     
     /* Dedicated Orbital & HUD Variables */
     --orbit-line: rgba(255, 255, 255, 0.35);
-    --radar-glow: rgba(0, 255, 102, 0.15);
+    --radar-glow: rgba(0, 255, 102, 0.18);
     --hover-color:#03c65bf3; 
     
     /* Image Filter: Deep blacks, high contrast B&W for dark mode */
@@ -29,7 +29,7 @@
     --text-muted: #666666;
     --accent: #000000;
     --border: #e5e5e5;
-    --dot-color: rgba(0, 0, 0, 0.2);
+    --dot-color: rgba(0, 0, 0, 0.14);
     
     /* Dedicated Orbital & HUD Variables */
     --orbit-line: rgba(0, 0, 0, 0.25);
@@ -356,8 +356,8 @@ h4 {
     flex: 1;
     display: flex;
     justify-content: flex-end;
-    margin-right: 3.825em;
-    margin-top: 2.5em;
+    margin-right: 0.8em;
+    margin-top: 0.5em;
     align-items: center;
     cursor: crosshair;
 }
@@ -381,16 +381,16 @@ h4 {
     border-width: 1.5px;
 }
 
-.orbit-1 { width: 360px; height: 360px; border-style: dashed; }
-.orbit-2 { width: 240px; height: 240px; border-style: solid; }
-.orbit-3 { width: 120px; height: 120px; border-style: dotted; }
+.orbit-1 { width: 300px; height: 300px; border-style: dashed; }
+.orbit-2 { width: 200px; height: 200px; border-style: solid; }
+.orbit-3 { width: 100px; height: 100px; border-style: dotted; }
 
 /* Radar Scanline */
 .radar-scan {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     margin: auto;
-    width: 360px; height: 360px;
+    width: 300px; height: 300px;
     border-radius: 50%;
     background: conic-gradient(from 0deg, transparent 75%, var(--radar-glow) 100%);
     animation: spin 4s linear infinite;
@@ -456,21 +456,20 @@ h4 {
 }
 
 /* Exact Coordinate Geometry */
+.label-1 { top: 270px; right: 312px; flex-direction: row-reverse; }
+.label-1 .node-dot { right: -3px; left: auto; top: calc(50% - 3px); animation-delay: 0s; }
+.label-1 .node-line { width: 40px; margin-right: 6px; margin-left: 0; }
+.label-1 .node-text { margin-right: 12px; margin-left: 0; text-align: right; }
 
-.label-1 { top: 298px; right: 327px; flex-direction: row-reverse; }
-.label-1 .node-dot { right: -3px; top: calc(50% - 3px); animation-delay: 1s; }
-.label-1 .node-line { width: 60px; margin-right: 6px; }
-.label-1 .node-text { margin-left: 0; margin-right: 12px; text-align: right; }
+.label-2 { top: 105px; right: 274px; flex-direction: row-reverse; }
+.label-2 .node-dot { right: -3px; left: auto; top: calc(50% - 3px); animation-delay: 1s; }
+.label-2 .node-line { width: 60px; margin-right: 6px; margin-left: 0; }
+.label-2 .node-text { margin-right: 12px; margin-left: 0; text-align: right; }
 
-.label-2 { top: 103px; right: 298px; flex-direction: row-reverse; }
-.label-2 .node-dot { right: -3px; top: calc(50% - 3px); animation-delay: 1s; }
-.label-2 .node-line { width: 60px; margin-right: 6px; }
-.label-2 .node-text { margin-left: 0; margin-right: 12px; text-align: right; }
-
-/* label-3 (AI/ML SYSTEMS): Bottom-right, Middle Orbit */
-.label-3 { top: 215px; left: 240px; }
-.label-3 .node-dot { left: -3px; top: calc(50% - 3px); animation-delay: 2s; }
-.label-3 .node-line { width: 80px; margin-left: 6px; }
+.label-3 { top: 205px; left: 236px; flex-direction: row; }
+.label-3 .node-dot { left: -3px; right: auto; top: calc(50% - 3px); animation-delay: 2s; }
+.label-3 .node-line { width: 80px; margin-left: 6px; margin-right: 0; }
+.label-3 .node-text { margin-left: 12px; margin-right: 0; text-align: left; }
 
 /* Center Node & Crosshairs */
 .core-node {
@@ -481,9 +480,16 @@ h4 {
     box-shadow: 0 0 15px var(--text-main);
     animation: pulse-node 2s infinite;
 }
-.crosshair { position: absolute; background: var(--orbit-line); }
-.cross-v { width: 1px; height: 100%; }
-.cross-h { width: 100%; height: 1px; }
+
+.crosshair { 
+    position: absolute; 
+    background: var(--orbit-line); 
+    top: 0; left: 0; right: 0; bottom: 0; 
+    margin: auto; 
+}
+
+.cross-v { width: 1px; height: 330px; }
+.cross-h { width: 330px; height: 1px; }
 
 @keyframes spin { 100% { transform: rotate(360deg); } }
 
